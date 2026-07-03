@@ -1,0 +1,67 @@
+---
+title: "Contribute a Tutorial to Project Based Learning"
+sidebarTitle: "Contributing"
+description: "Learn how to submit a new tutorial to the Project Based Learning list. Guidelines for formatting, placement, and pull request best practices."
+---
+
+Project Based Learning is entirely community-maintained. Every tutorial in the list was added by a developer who found it valuable enough to share. If you have followed a project-based tutorial that taught you something real and it is not already in the catalog, your pull request is welcome. The full contribution guidelines live in [CONTRIBUTING.md](https://github.com/practical-tutorials/project-based-learning/blob/master/CONTRIBUTING.md) on GitHub — this page summarizes everything you need to know before opening a PR.
+
+## Before You Submit
+
+Work through this checklist before writing a single line of Markdown. Most rejected pull requests fail one of these four checks.
+
+<Steps>
+  <Step title="Verify the tutorial doesn't already exist in the list">
+    Open the [README](https://github.com/practical-tutorials/project-based-learning/blob/master/README.md) and use your browser's find function (Ctrl+F / Cmd+F) to search for the tutorial title and the domain name of its URL. Duplicate submissions are the most common reason for a PR to be closed without merging.
+  </Step>
+  <Step title="Confirm it's a project-based tutorial">
+    The tutorial must guide the reader through building something from scratch — a working application, tool, library, or system. Reference documentation, conceptual articles, and cheat sheets do not qualify. Ask yourself: "Does following this tutorial result in a runnable project?" If the answer is yes, it belongs here.
+  </Step>
+  <Step title="Check that the tutorial is correctly categorized">
+    Each tutorial lives under the section for its primary programming language. A Python web scraper goes under **Python**, not under **Web Scraping** as a top-level section. If the tutorial uses multiple languages (e.g., Go backend with a React frontend), place it under the language that does the most significant work in the project.
+  </Step>
+  <Step title="Improvements to existing tutorials are also welcome">
+    If a tutorial already in the list has been updated, moved to a new URL, had broken links fixed, or expanded with new parts, a PR to update the existing entry is just as valuable as adding a new one.
+  </Step>
+</Steps>
+
+## Formatting Guidelines
+
+Every entry in the README follows one of two Markdown formats. Use exactly these formats — inconsistent formatting is a common reason PRs need revision before merging.
+
+```markdown
+# Single tutorial
+- [Tutorial Title](https://link-to-tutorial)
+
+# Multi-part series
+- Title
+  - [Part 1](link_to_part_1)
+  - [Part 2](link_to_part_2)
+```
+
+Place your entry in alphabetical order within its subsection where possible, and match the indentation style of the surrounding entries exactly.
+
+## Pull Request Rules
+
+These rules come directly from [CONTRIBUTING.md](https://github.com/practical-tutorials/project-based-learning/blob/master/CONTRIBUTING.md):
+
+- **Use a descriptive PR title** — the title should make it clear what tutorial you are adding and to which language section (e.g., `Add "Build a BitTorrent client" to Go`).
+- **One tutorial per pull request** — each PR should add or modify exactly one tutorial entry. Bundling multiple tutorials into a single PR makes review harder and increases the chance of partial rejection.
+- **Use the correct link format** — entries must follow `[Title](link_to_tutorial)`. Do not use raw URLs, bold text, or any other formatting for the link itself.
+- **No URL shorteners** — links must point directly to the tutorial. URL shorteners (bit.ly, tinyurl, etc.) are not allowed. The one exception: if the original URL exceeds 80 characters, a URL shortener is permitted.
+- **Check spelling and grammar** — proofread the tutorial title as it will appear in the list. Titles are displayed exactly as submitted.
+- **Remove trailing whitespace** — ensure your text editor does not insert spaces at the end of lines. Most editors have an option to trim trailing whitespace on save.
+- **If adding a new language or technology, create a new TOC entry** — if your tutorial's language does not yet have a section in the README, add it in alphabetical order in both the Table of Contents and as a new `## Language:` heading in the body of the document.
+
+## Adding a New Language
+
+If the language or technology you want to add does not exist anywhere in the README, you will need to create both a Table of Contents entry and a new section heading. Follow these steps:
+
+1. Find the correct alphabetical position in the `## Table of Contents:` list at the top of the README and add a new bullet: `- [Language Name](#language-name)`.
+2. Find the correct alphabetical position in the body of the README (after the last existing language section that comes before yours alphabetically) and add a new heading: `## Language Name:`.
+3. Add your first tutorial entry under the new heading using the standard format.
+4. Keep the anchor in the TOC link lowercase and hyphenated to match GitHub's automatic heading anchors (e.g., `#html-and-css` for `## HTML and CSS:`).
+
+<Note>
+  If you have questions about these guidelines or are unsure whether a tutorial qualifies, you can reach the project maintainer at **tuvtran97@gmail.com**.
+</Note>

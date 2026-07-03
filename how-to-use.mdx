@@ -1,0 +1,96 @@
+---
+title: "How to Navigate and Use the Tutorial Catalog"
+sidebarTitle: "How to Use"
+description: "Learn how to find the right project-based tutorial for your skill level and goals, and how to get the most out of each learning project."
+---
+
+The Project Based Learning catalog is a flat list of external links organized by primary programming language. Within each language section you will find a mix of standalone articles, multi-part written series, and video-based courses — all pointing to tutorials hosted on external sites. There are no paywalls or accounts required on this site; every link takes you directly to the tutorial author's content. Your job is to find the right project, click through, and start building.
+
+## Finding the Right Tutorial
+
+Picking the right starting point matters more than most people expect. A tutorial that is too advanced leads to frustration; one that is too easy leads to boredom. Use this process to land on something that fits.
+
+<Steps>
+  <Step title="Choose a language you want to learn or already know">
+    Every section in the catalog is anchored to a primary programming language. If you are picking up Go for the first time, head to the Go section. If you know Python and want to deepen it, Python has the largest section in the list. Start where you are, not where you think you should be.
+  </Step>
+  <Step title="Browse the category that matches your goal">
+    Most language sections are subdivided by domain — web applications, bots, data science, machine learning, games, systems programming, and miscellaneous. Read the category headings and pick the domain that maps to what you actually want to build. Interest is a better filter than prestige.
+  </Step>
+  <Step title="Pick a project that interests you">
+    Scan the tutorial titles and stop on the first one that makes you think "I want that to exist on my machine." Completion rates for project-based tutorials track almost perfectly with how much the learner wanted the end result. A blockchain implementation you find fascinating will teach you more than a todo app you find boring, even if the todo app is technically simpler.
+  </Step>
+  <Step title="Check the tutorial's prerequisites and estimated complexity">
+    Open the tutorial link and skim the introduction before committing. Most authors state what you need to know upfront. As a rough rule of thumb: systems tutorials (OS, compiler, emulator) assume strong fundamentals; web and app-clone tutorials are generally approachable for beginners. See the Skill Level Guide below for more detail.
+  </Step>
+</Steps>
+
+## Types of Tutorials
+
+The catalog contains three broad formats. Knowing what you are getting into before you start helps you plan your time.
+
+<Tabs>
+  <Tab title="Single Tutorials">
+    A single tutorial is a standalone article or page that walks you through an entire project from start to finish in one sitting. These are ideal when you want a result quickly or are exploring a new language without a major time investment.
+
+    **Examples:**
+    - [Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/) — one article, complete shell implementation
+    - [Build a Simple Blockchain in Python](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) — single post, runnable blockchain
+    - [Write a hash table in C](https://github.com/jamesroutley/write-a-hash-table) — a short GitHub-hosted book with a tight scope
+
+    Single tutorials typically take between 30 minutes and a few hours to complete.
+  </Tab>
+  <Tab title="Multi-Part Series">
+    A multi-part series breaks a larger project into sequential chapters, each building on the last. They are listed in the catalog with indented part links beneath the series title. These are the best format for learning a language deeply because the project grows in complexity as your understanding grows.
+
+    **Examples:**
+    - **Building Blockchain in Go** — Parts 1 through 7, covering prototype → proof of work → persistence → transactions → networking
+    - **Write a C compiler** — Parts 1 through 10, covering lexing → code generation → operators → loops → functions → global variables
+    - **Writing a Linux Debugger** — Parts 1 through 10, covering setup → breakpoints → registers → DWARF → stack unwinding → variables
+
+    Plan multi-part series over multiple sessions. Finishing one part per sitting is a sustainable pace.
+  </Tab>
+  <Tab title="Video Courses">
+    Several entries in the catalog link to YouTube videos, playlists, or video-based course platforms. These are marked with `(video)` in the catalog. Video tutorials are especially common in the JavaScript, Python, and Dart/Flutter sections.
+
+    **Examples:**
+    - [Learn Python For Data Science by Doing Several Projects](https://www.youtube.com/watch?v=T5pRlIbr6gg) — 6-part YouTube series
+    - [Build an Android Flashlight App](https://www.youtube.com/watch?v=dhWL4DC7Krs) — single Java/Android video
+    - [Flutter Amazon Clone with Admin Panel](https://youtu.be/O3nmP-lZAdg) — full-length Flutter video
+
+    Video tutorials benefit from being paused frequently. Treat them like written tutorials: type along rather than just watching, and pause whenever something is unclear.
+  </Tab>
+</Tabs>
+
+## Getting the Most from a Tutorial
+
+Following a tutorial and actually learning from it are two different things. These habits separate developers who retain knowledge from those who finish a tutorial and immediately forget what they built.
+
+<Accordion title="Type along instead of copy-pasting">
+  Typing every line of code — even boilerplate you fully understand — builds muscle memory and forces your brain to process each token individually. When you copy-paste, your eyes scan the code without your hands confirming it. The slight friction of typing is the learning mechanism. If a tutorial provides a GitHub repo as reference, open it only when you are genuinely stuck, not as a shortcut.
+</Accordion>
+
+<Accordion title="Understand before moving on">
+  When you encounter a concept or a block of code that you do not fully understand, stop. Do not proceed to the next step hoping it will become clear later — it rarely does, and confusion compounds. Open a second tab, look up the unfamiliar function or concept, and satisfy yourself that you understand *why* the code works, not just *that* it works. This habit slows you down in the short term and accelerates you significantly over a career.
+</Accordion>
+
+<Accordion title="Extend the project afterward">
+  The tutorial gives you a foundation; your extensions turn it into learning that sticks. After completing a tutorial, pick one small feature to add that was not in the original scope. If you built a shell, add tab completion. If you built a blockchain, add a simple wallet. If you built a todo app, add due dates and sorting. This forces you to read the code you just wrote as an author rather than a transcriber, and to make decisions the tutorial never made for you.
+</Accordion>
+
+<Accordion title="Build without the tutorial once done">
+  A week after finishing a tutorial, open a blank editor and try to rebuild the same project from memory — without referencing the tutorial or your previous code. You will not remember everything, and that is the point. The gaps you discover are exactly what you need to review. Reconstructing from memory is the highest-fidelity test of whether you have internalized the concepts or merely copied them.
+</Accordion>
+
+## Skill Level Guide
+
+<Note>
+  Tutorials in this catalog are **not labeled by difficulty level**. The best way to gauge complexity is to read the first paragraph of the tutorial itself. As a general orientation:
+
+  - **Systems and low-level tutorials** (operating systems, compilers, interpreters, emulators, debuggers, kernel modules) tend to assume strong fundamentals in computer science and memory management. They are typically advanced.
+  - **Web app and app-clone tutorials** (todo apps, social media clones, chat apps, CRUD APIs) are generally beginner-to-intermediate friendly and assume little beyond basic language syntax.
+  - **Data science and machine learning tutorials** sit in the middle — the math can be demanding, but libraries like scikit-learn and Keras abstract away most of the implementation complexity.
+  - **Multi-part series** of 5 or more parts are almost always intermediate-to-advanced projects regardless of domain.
+
+  When in doubt, start the tutorial and read the introduction. If the prerequisites list things you have not encountered, bookmark it and come back after you have covered the gaps.
+</Note>

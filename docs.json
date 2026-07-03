@@ -1,72 +1,92 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Project Based Learning",
+  "theme": "willow",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "primary": "#2563EB",
+    "light": "#EFF6FF",
+    "dark": "#1E3A5F"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "type": "github",
+      "href": "https://github.com/practical-tutorials/project-based-learning"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/practical-tutorials/project-based-learning"
     }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Tutorials",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "how-to-use",
+              "contributing"
+            ]
+          },
+          {
+            "group": "Systems & Low-Level",
+            "pages": [
+              "tutorials/c-cpp",
+              "tutorials/rust",
+              "tutorials/go"
+            ]
+          },
+          {
+            "group": "Web Development",
+            "pages": [
+              "tutorials/javascript",
+              "tutorials/python-web",
+              "tutorials/php",
+              "tutorials/ruby"
+            ]
+          },
+          {
+            "group": "Data Science & ML",
+            "pages": [
+              "tutorials/python-ml",
+              "tutorials/python-opencv",
+              "tutorials/r"
+            ]
+          },
+          {
+            "group": "Mobile & Desktop",
+            "pages": [
+              "tutorials/dart-flutter",
+              "tutorials/swift",
+              "tutorials/kotlin"
+            ]
+          },
+          {
+            "group": "Other Languages",
+            "pages": [
+              "tutorials/csharp",
+              "tutorials/java",
+              "tutorials/haskell",
+              "tutorials/functional-languages"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Additional Learning",
+            "pages": [
+              "resources/additional-resources",
+              "resources/by-topic"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
